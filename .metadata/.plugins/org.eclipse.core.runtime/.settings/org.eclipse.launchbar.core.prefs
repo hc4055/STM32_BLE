@@ -1,7 +1,9 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:TEST_1,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:TEST_LED_BLINK
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:TEST_1,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:TEST_LED_BLINK,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32f4
 eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:TEST_1/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:TEST_1/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:TEST_LED_BLINK/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:TEST_LED_BLINK/activeLaunchTarget=null\:---

@@ -424,3 +424,27 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-02-04 20:35:09.619
 !MESSAGE Existing sessions are:
+!SESSION 2025-02-05 20:23:50.202 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-05 20:23:53.219
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-05 20:23:53.219
+!MESSAGE Log4j2 initialized with config file C:\Users\PC\Documents\GitHub\STM32_BLE\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-02-05 20:23:56.827
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-05 20:28:22.242
+!MESSAGE Indexed 'stm32f4' (19 sources, 81 headers) in 1.09 sec: 4,302 declarations; 18,136 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0089%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-05 20:37:10.371
+!MESSAGE Indexed 'stm32f4' (19 sources, 81 headers) in 0.433 sec: 4,309 declarations; 18,251 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0089%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-05 20:37:17.333
+!MESSAGE Indexed 'stm32f4' (19 sources, 81 headers) in 0.449 sec: 4,309 declarations; 18,251 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0089%)
