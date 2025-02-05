@@ -1,20 +1,19 @@
-20:54:34 **** Incremental Build of configuration Debug for project stm32f4 ****
+23:31:54 **** Incremental Build of configuration Debug for project STM32F4_Read_DHT11 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "stm32f4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\PC\Documents\GitHub\STM32_BLE\stm32f4\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: stm32f4.elf
+arm-none-eabi-gcc -o "STM32F4_Read_DHT11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\PC\Documents\GitHub\STM32_BLE\STM32F4_Read_DHT11\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F4_Read_DHT11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32F4_Read_DHT11.elf
  
-arm-none-eabi-size  stm32f4.elf 
-arm-none-eabi-objdump -h -S stm32f4.elf  > "stm32f4.list"
-arm-none-eabi-objcopy  -O ihex stm32f4.elf  "stm32f4.hex"
+arm-none-eabi-size  STM32F4_Read_DHT11.elf 
+arm-none-eabi-objdump -h -S STM32F4_Read_DHT11.elf  > "STM32F4_Read_DHT11.list"
+arm-none-eabi-objcopy  -O ihex STM32F4_Read_DHT11.elf  "STM32F4_Read_DHT11.hex"
    text	   data	    bss	    dec	    hex	filename
-   5772	     12	   1572	   7356	   1cbc	stm32f4.elf
-arm-none-eabi-objcopy  -O binary stm32f4.elf  "stm32f4.bin"
+   8680	     12	   1660	  10352	   2870	STM32F4_Read_DHT11.elf
+arm-none-eabi-objcopy  -O binary STM32F4_Read_DHT11.elf  "STM32F4_Read_DHT11.bin"
 Finished building: default.size.stdout
  
-Finished building: stm32f4.hex
-Finished building: stm32f4.bin
-Finished building: stm32f4.list
+Finished building: STM32F4_Read_DHT11.hex
+Finished building: STM32F4_Read_DHT11.bin
  
  
+Finished building: STM32F4_Read_DHT11.list
  
