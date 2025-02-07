@@ -42,10 +42,10 @@
 
 /* Private variables ---------------------------------------------------------*/
 TIM_HandleTypeDef htim2;
+
+/* USER CODE BEGIN PV */
 volatile int32_t temperature = 0;
 dht11_t dht11_sensor;
-/* USER CODE BEGIN PV */
-
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/

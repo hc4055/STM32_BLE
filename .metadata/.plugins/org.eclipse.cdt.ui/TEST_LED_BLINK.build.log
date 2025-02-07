@@ -1,10 +1,10 @@
-20:38:08 **** Incremental Build of configuration Release for project TEST_LED_BLINK ****
+19:56:19 **** Build of configuration Debug for project TEST_LED_BLINK ****
 make -j12 all 
 arm-none-eabi-size  TEST_LED_BLINK.elf 
    text	   data	    bss	    dec	    hex	filename
-   2928	     12	   1572	   4512	   11a0	TEST_LED_BLINK.elf
+   4648	     12	   1572	   6232	   1858	TEST_LED_BLINK.elf
 Finished building: default.size.stdout
  
 
-20:38:08 Build Finished. 0 errors, 0 warnings. (took 123ms)
+19:56:19 Build Finished. 0 errors, 0 warnings. (took 141ms)
 

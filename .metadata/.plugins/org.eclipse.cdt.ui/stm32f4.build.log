@@ -1,23 +1,10 @@
-20:54:34 **** Incremental Build of configuration Debug for project stm32f4 ****
+19:56:48 **** Build of configuration Debug for project stm32f4 ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "stm32f4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\PC\Documents\GitHub\STM32_BLE\stm32f4\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: stm32f4.elf
- 
 arm-none-eabi-size  stm32f4.elf 
-arm-none-eabi-objdump -h -S stm32f4.elf  > "stm32f4.list"
-arm-none-eabi-objcopy  -O ihex stm32f4.elf  "stm32f4.hex"
    text	   data	    bss	    dec	    hex	filename
    5772	     12	   1572	   7356	   1cbc	stm32f4.elf
-arm-none-eabi-objcopy  -O binary stm32f4.elf  "stm32f4.bin"
 Finished building: default.size.stdout
  
-Finished building: stm32f4.hex
-Finished building: stm32f4.bin
-Finished building: stm32f4.list
- 
- 
- 
 
-20:54:34 Build Finished. 0 errors, 0 warnings. (took 328ms)
+19:56:48 Build Finished. 0 errors, 0 warnings. (took 123ms)
 
