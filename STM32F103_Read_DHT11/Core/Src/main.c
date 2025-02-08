@@ -113,7 +113,7 @@ int main(void)
   HAL_Delay(1000);
 
   // Đặt tên cho module HM10 (tùy chọn)
-  char cmd_name[] = "AT+NAMESTM_TEMP\r\n";
+  char cmd_name[] = "AT+NAMEhm10\r\n";
   HAL_UART_Transmit(&huart1, (uint8_t*)cmd_name, strlen(cmd_name), HAL_MAX_DELAY);
   HAL_Delay(1000);
 
@@ -135,11 +135,6 @@ int main(void)
 	  if (readDHT11(&dht11_sensor)) {
 		// Lưu giá trị nhiệt độ vào biến global
 		temperature = dht11_sensor.temperature;
-
-		// Bạn có thể thêm một đoạn code để gửi giá trị đi (ví dụ qua UART, hiển thị trên LCD, v.v.)
-		// Ví dụ:
-		// sprintf(buf, "Temperature: %d C", temperature);
-		// HAL_UART_Transmit(&huart1, (uint8_t*)buf, strlen(buf), HAL_MAX_DELAY);
 	  }
 
 	  HAL_GPIO_WritePin(LED_ONBOARD_GPIO_Port, LED_ONBOARD_Pin, GPIO_PIN_SET);
