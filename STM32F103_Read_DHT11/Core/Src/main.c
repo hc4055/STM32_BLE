@@ -102,26 +102,26 @@ int main(void)
   init_dht11(&dht11_sensor, &htim2, GPIOB, GPIO_PIN_4);
   HAL_TIM_Base_Start(&htim2);
 
-  // Gửi lệnh AT để kiểm tra kết nối HM10
-  char at_cmd[] = "AT\r\n";
-  HAL_UART_Transmit(&huart1, (uint8_t*)at_cmd, strlen(at_cmd), HAL_MAX_DELAY);
-  HAL_Delay(1000); // Đợi phản hồi từ HM10
-
-  // Cấu hình HM10 thành chế độ BLE Peripheral
-  char cmd_role[] = "AT+ROLE1\r\n";
-  HAL_UART_Transmit(&huart1, (uint8_t*)cmd_role, strlen(cmd_role), HAL_MAX_DELAY);
-  HAL_Delay(1000);
-
-  // Đặt tên cho module HM10 (tùy chọn)
-  char cmd_name[] = "AT+NAMEhm10\r\n";
-  HAL_UART_Transmit(&huart1, (uint8_t*)cmd_name, strlen(cmd_name), HAL_MAX_DELAY);
-  HAL_Delay(1000);
-
-  // Khởi động lại HM10 để áp dụng cấu hình
-  char cmd_reset[] = "AT+RESET\r\n";
-  HAL_UART_Transmit(&huart1, (uint8_t*)cmd_reset, strlen(cmd_reset), HAL_MAX_DELAY);
-  HAL_Delay(2000); // Chờ module khởi động lại
-  /* USER CODE END 2 */
+//  // Gửi lệnh AT để kiểm tra kết nối HM10
+//  char at_cmd[] = "AT\r\n";
+//  HAL_UART_Transmit(&huart1, (uint8_t*)at_cmd, strlen(at_cmd), HAL_MAX_DELAY);
+//  HAL_Delay(1000); // Đợi phản hồi từ HM10
+//
+//  // Cấu hình HM10 thành chế độ BLE Peripheral
+//  char cmd_role[] = "AT+ROLE1\r\n";
+//  HAL_UART_Transmit(&huart1, (uint8_t*)cmd_role, strlen(cmd_role), HAL_MAX_DELAY);
+//  HAL_Delay(1000);
+//
+//  // Đặt tên cho module HM10 (tùy chọn)
+//  char cmd_name[] = "AT+NAMEhm10\r\n";
+//  HAL_UART_Transmit(&huart1, (uint8_t*)cmd_name, strlen(cmd_name), HAL_MAX_DELAY);
+//  HAL_Delay(1000);
+//
+//  // Khởi động lại HM10 để áp dụng cấu hình
+//  char cmd_reset[] = "AT+RESET\r\n";
+//  HAL_UART_Transmit(&huart1, (uint8_t*)cmd_reset, strlen(cmd_reset), HAL_MAX_DELAY);
+//  HAL_Delay(2000); // Chờ module khởi động lại
+//  /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -145,6 +145,7 @@ int main(void)
 
 	  // Định dạng dữ liệu dưới dạng chuỗi
 	  sprintf(uartBuffer, "Temp: %d C\r\n", temperature);
+//	  sprintf(uartBuffer, "Temp: 100 C\r\n");
 
 	  // Gửi dữ liệu qua USART1
 	  HAL_UART_Transmit(&huart1, (uint8_t*)uartBuffer, strlen(uartBuffer), 100);
